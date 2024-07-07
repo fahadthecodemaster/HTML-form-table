@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table design</title>
+    <style>
+        table,td,th{
+            padding: 5px;
+            border:1px solid rgb(167, 162, 162);
+            
+        }
+        table{
+            width: 100%;
+            height: 500px;
+            border-collapse: collapse;
+            
+        }
+        tr:nth-child(even){
+            background-color: rgb(179, 231, 231);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Roll</th>
+                <th>City</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Karim</td>
+                    <td>554488</td>
+                    <td rowspan="2">Dhaka</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td rowspan="3">Rahim</td>
+                    <td>554486</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>554487</td>
+                    <td>Khulna</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>554444</td>
+                    <td>Chattogram</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td colspan="2">Mojibur</td>
+                    <td>Feni</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
